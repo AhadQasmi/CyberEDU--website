@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet"href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="group.css">
+    <link rel="icon" type="image/x-icon" href="cybersecurity.png">
+    <link rel="stylesheet"href=gro.css>
+</head>
+    <title>Group Members</title>
+    <style>
+        body {
+            
+            background: linear-gradient(45deg,#A1ADBC, #001C45); 
+            color: #001C45; 
+        }
+
+       
+       </style>
+       <head>
+        <body>
+            <header>
+                <img src="cybersecurity.png" width="40"  height="40" alt="logo">
+               <a href="#" class="logo">Cyber<sub  style="color:white; font-family:Franklin Gothic Medium; font-size:medium;" >
+                 <i> Edu</i></sub></a>
+             <nav class="naav" style="justify-content: space-between;" >
+               <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="coursess.html">classes</a></li>
+         <li><a href="contact.html" >Contact us</a></li>
+         <li><a href="group.html" >group info</a></li>
+         </ul> 
+             </nav>
+           </header>
+           </div>
+    <h2><br><br><br>Our Amazing Group Members</h2>
+    <br>
+    
+    <ul id="group-members">
+       <li class="link"  >Waad Nasser Al-Aradi </li>
+        <li class="link" >Ahd Fraj Al-Qasmi </li>
+        <li class="link"> Heba Karim Al-Atwi</li>
+        <li class="link" >Lujain Omar Al-Omrani </li>
+    </div>
+    </ul>
+    <script>
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function updatePage() {
+            const groupList = document.getElementById('group-members');
+            const members = Array.from(groupList.getElementsByTagName('li'));
+            
+            const shuffledMembers = shuffleArray(members);
+
+            groupList.innerHTML = '';
+
+            shuffledMembers.forEach(member => {
+                groupList.appendChild(member);
+            });
+        }
+        window.onload = updatePage;
+    </script>
+     <div class="join">
+        <h3 style="color: #A1ADBC ;">JOIN US</h3>
+            <li ><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus-g"></i></i></a></li>
+        <li><a href="#"><i class="fa fa-github"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <b><p>copy right &copy;2023.</p> Designed by </b>Cybersecurity group </p>
+    </div>
+</body>
+</html>
